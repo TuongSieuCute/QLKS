@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="QLKSDataSet" targetNamespace="http://tempuri.org/QLKSDataSet.xsd" xmlns:mstns="http://tempuri.org/QLKSDataSet.xsd" xmlns="http://tempuri.org/QLKSDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="QLKSConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="QLKSConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.QLKS.Properties.Settings.GlobalReference.Default.QLKSConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="HoaDonTableAdapter" GeneratorDataComponentClassName="HoaDonTableAdapter" Name="HoaDon" UserDataComponentName="HoaDonTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="QLKSConnectionString (Settings)" DbObjectName="QLKS.dbo.HoaDon" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT TienCanThanhToan FROM dbo.HoaDon</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="TienCanThanhToan" DataSetColumn="TienCanThanhToan" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="QLKSDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="QLKSDataSet" msprop:Generator_DataSetName="QLKSDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="HoaDon" msprop:Generator_RowEvHandlerName="HoaDonRowChangeEventHandler" msprop:Generator_RowDeletedName="HoaDonRowDeleted" msprop:Generator_RowDeletingName="HoaDonRowDeleting" msprop:Generator_RowEvArgName="HoaDonRowChangeEvent" msprop:Generator_TablePropName="HoaDon" msprop:Generator_RowChangedName="HoaDonRowChanged" msprop:Generator_RowChangingName="HoaDonRowChanging" msprop:Generator_TableClassName="HoaDonDataTable" msprop:Generator_RowClassName="HoaDonRow" msprop:Generator_TableVarName="tableHoaDon" msprop:Generator_UserTableName="HoaDon">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TienCanThanhToan" msprop:Generator_ColumnPropNameInRow="TienCanThanhToan" msprop:Generator_ColumnPropNameInTable="TienCanThanhToanColumn" msprop:Generator_ColumnVarNameInTable="columnTienCanThanhToan" msprop:Generator_UserColumnName="TienCanThanhToan" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
